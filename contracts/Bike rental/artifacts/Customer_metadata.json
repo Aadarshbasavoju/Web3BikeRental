@@ -1,0 +1,181 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_providerContractAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "customer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "bikeId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "rentalTime",
+						"type": "uint256"
+					}
+				],
+				"name": "BikeRented",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "customer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "bikeId",
+						"type": "uint256"
+					}
+				],
+				"name": "BikeReturned",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "activeRentals",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "bikeId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rentalTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isActive",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getActiveRental",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "bikeId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rentalTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isActive",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "bikeId",
+						"type": "uint256"
+					}
+				],
+				"name": "rentBike",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "returnBike",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Bike rental/Customer.sol": "Customer"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Bike rental/Customer.sol": {
+			"keccak256": "0xcb304f2bd6c5909c27bb24b94525cf9acf6a6b7bb27588af7ebe5a17033a3ecc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ee73f40606436e7b1f2e3876934839355ae1b75cc7160536bfa9999d51a3764b",
+				"dweb:/ipfs/QmWN6DTQSFLxrkF6N1nMzATyT7Q1nJTCnHdZBfJvxZhfjm"
+			]
+		},
+		"contracts/Bike rental/provider.sol": {
+			"keccak256": "0xddc2b3fb4c4f8e29e256a08b47b1aa8afb7237e5d9d35cf820e27eebf262b85d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f5743fe5faa6f68370ed30dddc6a8bbd0c729c55ba7254538d6d7bdd69a3dd47",
+				"dweb:/ipfs/QmdCQTuMEiQTvZQWNDgh3feM7ntDzCtUPqsFq87ozeY2uf"
+			]
+		}
+	},
+	"version": 1
+}
