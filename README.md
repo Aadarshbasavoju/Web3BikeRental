@@ -19,4 +19,4 @@ Test the contracts in Remix or any Ethereum development environment by simulatin
 
 ## License
 
-This project is licensed under the MIT License - see the
+
