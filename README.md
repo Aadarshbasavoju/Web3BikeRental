@@ -19,4 +19,4 @@ Test the contracts in Remix or any Ethereum development environment by simulatin
 
 ## Deploying
 
-Deploying the code into vercel to run into  
+Deploying the code into vercel to run into environment.  
