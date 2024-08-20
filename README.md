@@ -16,3 +16,7 @@ This repository contains Solidity smart contracts for a bike rental system on th
 ## Testing
 
 Test the contracts in Remix or any Ethereum development environment by simulating interactions between providers and customers.
+
+## Deploying
+
+Deploying the code into vercel to run into  
